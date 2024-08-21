@@ -15,7 +15,6 @@ phases:
   post_build:
     commands:
       - echo "Build complete. Preparing for deployment."
-      - aws s3 cp output/ s3://artifact-store-bucket-09/ --recursive
 
 artifacts:
   files:
