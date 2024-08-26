@@ -10,17 +10,17 @@ phases:
   build:
     commands:
       - echo "Packaging the HTML file"
-     # - mkdir -p output
-    #  - cp index.html output/index.html
+      - mkdir -p output
+      - cp index.html output/index.html
       - aws s3 sync . s3://artifact-store-bucket-09
   post_build:
     commands:
       - echo "Build complete. Preparing for deployment."
 
 artifacts:
- # files:
-   # - output/index.html
- # discard-paths: yes
+  files:
+    - output/index.html
+  discard-paths: yes
 
 
 
