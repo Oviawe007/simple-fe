@@ -18,9 +18,9 @@ phases:
       - echo "Build complete. Preparing for deployment."
 
 artifacts:
-  files:
-    - output/index.html
-  discard-paths: yes
+ # files:
+   # - output/index.html
+ # discard-paths: yes
 
 
 
